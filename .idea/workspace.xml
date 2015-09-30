@@ -413,7 +413,7 @@
       <created>1443605757133</created>
       <updated>1443605757133</updated>
       <workItem from="1443605760678" duration="4064000" />
-      <workItem from="1443613815536" duration="290000" />
+      <workItem from="1443613815536" duration="305000" />
     </task>
     <task id="LOCAL-00001" summary="teszt commit">
       <created>1443614005041</created>
@@ -423,11 +423,15 @@
       <created>1443614086785</created>
       <updated>1443614086785</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="readme file added">
+      <created>1443614109210</created>
+      <updated>1443614109210</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4354000" />
+    <option name="totallyTimeSpent" value="4369000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
