@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="58ce16a2-f061-4368-86d9-651e0628fdd7" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/README.md" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="engineunit.iws" />
@@ -415,17 +413,21 @@
       <created>1443605757133</created>
       <updated>1443605757133</updated>
       <workItem from="1443605760678" duration="4064000" />
-      <workItem from="1443613815536" duration="257000" />
+      <workItem from="1443613815536" duration="290000" />
     </task>
     <task id="LOCAL-00001" summary="teszt commit">
       <created>1443614005041</created>
       <updated>1443614005041</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="readme file added">
+      <created>1443614086785</created>
+      <updated>1443614086785</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4321000" />
+    <option name="totallyTimeSpent" value="4354000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -477,7 +479,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="teszt commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="teszt commit" />
+    <MESSAGE value="readme file added" />
+    <option name="LAST_COMMIT_MESSAGE" value="readme file added" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
