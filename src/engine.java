@@ -6,9 +6,34 @@ public class engine {
     protected double baseRPM=13.33;  //~800rpm
     protected double maxRPM=116.6; //~7000rpm
     protected double maxRange=maxRPM-baseRPM;
+    protected double previousThrottle=0;
+    protected double throttle;
+    protected double actualRPM;
 
     public boolean isStarted(boolean start){
-        if(start==true){
+        if(start==true)
+            return true;
+        else
+            return false;
+    }
+
+
+    protected boolean isThrottleValid(double throttle){
+        if(throttle<100)
+            return true;
+        else
+            return false;
+    }
+
+    protected boolean isThrottleScaleValid(double previousThrottle, double actualThrottle){
+        if(Math.abs(actualThrottle-previousThrottle)<=10)
+            return true;
+        else
+            return false;
+    }
+
+    protected boolean isSpeedUp(double previousThrottle, double actualThrottle){
+        if(previousThrottle<actualThrottle){
             return true;
         }
         else{
@@ -16,13 +41,33 @@ public class engine {
         }
     }
 
-    public double generateRPM(boolean enginestatus, double throttle){
+
+
+    public double generateRPM(boolean enginestatus, double Throttle){
+
+        throttle=Throttle;
 
         if(isStarted(enginestatus)) {
-            if (throttle > 0) {
 
-                return baseRPM + maxRange * (throttle / 100);
-            } else {
+            if(isThrottleValid(throttle)){
+
+                if(isThrottleScaleValid(previousThrottle, throttle))
+                {
+                    if(isSpeedUp(previousThrottle, throttle))
+                        return actualRPM=baseRPM + maxRange * (throttle / 100);
+                    else
+                        return actualRPM=baseRPM - maxRange * (throttle / 100);
+                }
+                else{
+
+                    //ide kéne kidolgozni azt, hogy mivan, ha többet változik a gázpedál állása, mint 10%
+
+                    return baseRPM;
+                }
+            }
+            else {
+
+               //ezt ki kéne dolgozni, hogy mi van ha invalid inputot kapunk
                 return baseRPM;
             }
         }
@@ -31,7 +76,6 @@ public class engine {
         }
 
     }
-
 
     public engine(double baseRPM) {
         this.baseRPM = baseRPM;
