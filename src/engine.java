@@ -53,10 +53,16 @@ public class engine {
 
                 if(isThrottleScaleValid(previousThrottle, throttle))
                 {
-                    if(isSpeedUp(previousThrottle, throttle))
+
+
+                    if(isSpeedUp(previousThrottle, throttle)){
+                        previousThrottle=throttle;
                         return actualRPM=baseRPM + maxRange * (throttle / 100);
-                    else
+                    }
+                    else{
+                        previousThrottle=throttle;
                         return actualRPM=baseRPM - maxRange * (throttle / 100);
+                    }
                 }
                 else{
 
