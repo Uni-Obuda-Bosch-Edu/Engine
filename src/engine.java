@@ -1,6 +1,9 @@
 /**
  * Created by CM on 2015.09.30..
  */
+
+import javax.swing.Timer;
+
 public class engine {
 
     protected double baseRPM=13.33;  //~800rpm
@@ -25,12 +28,12 @@ public class engine {
             return false;
     }
 
-    protected boolean isThrottleScaleValid(double previousThrottle, double actualThrottle){
-        if(Math.abs(actualThrottle-previousThrottle)<=10)
-            return true;
-        else
-            return false;
-    }
+   //protected boolean isThrottleScaleValid(double previousThrottle, double actualThrottle){
+   //    if(Math.abs(actualThrottle-previousThrottle)<=10)
+   //        return true;
+   //    else
+   //        return false;
+   //}
 
     protected boolean isSpeedUp(double previousThrottle, double actualThrottle){
         if(previousThrottle<actualThrottle){
@@ -51,25 +54,18 @@ public class engine {
 
             if(isThrottleValid(throttle)){
 
-                if(isThrottleScaleValid(previousThrottle, throttle))
-                {
-
-
                     if(isSpeedUp(previousThrottle, throttle)){
                         previousThrottle=throttle;
                         return actualRPM=baseRPM + maxRange * (throttle / 100);
+                        //ide kéne kitalálni, hogyan gyorsítsuk (a másik ágban pedig lassítsuk) késleltetve a fordulatszámot
+
+
                     }
                     else{
                         previousThrottle=throttle;
                         return actualRPM=baseRPM - maxRange * (throttle / 100);
                     }
-                }
-                else{
 
-                    //ide kéne kidolgozni azt, hogy mivan, ha többet változik a gázpedál állása, mint 10%
-
-                    return baseRPM;
-                }
             }
             else {
 
