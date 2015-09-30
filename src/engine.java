@@ -1,87 +1,101 @@
-/**
- * Created by CM on 2015.09.30..
- */
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+import java.util.concurrent.Executors;
+import java.util.concurrent.ScheduledExecutorService;
+import static java.util.concurrent.TimeUnit.*;
+import javax.swing.*;
 
-import javax.swing.Timer;
+public class Engine {
+    private static final float BASERPM = 13.33f;  // ~800rpm
+    private static final float MAXRPM = 116.6f; // ~7000rpm
+    private static final byte REACTIONTIME = 100; // milliseconds
+    private static final byte REFRESHTIME = 10; //  milliseconds
+    private static final float MAXRANGE = MAXRPM - BASERPM;
 
-public class engine {
+    private boolean isStarted;
 
-    protected double baseRPM=13.33;  //~800rpm
-    protected double maxRPM=116.6; //~7000rpm
-    protected double maxRange=maxRPM-baseRPM;
-    protected double previousThrottle=0;
-    protected double throttle;
-    protected double actualRPM;
-
-    public boolean isStarted(boolean start){
-        if(start==true)
-            return true;
-        else
-            return false;
+    private float actualRPM;
+    public float getActualRPM() {
+        return actualRPM;
     }
 
+    private double previousGasPedalPushPercent;
+    private double actualGasPedalPushPercent;
 
-    protected boolean isThrottleValid(double throttle){
-        if(throttle<100)
-            return true;
-        else
-            return false;
-    }
+    private ScheduledExecutorService refreshExecutorService;
+    private Timer startTimer;
+    private Timer throttleTimer;
 
-   //protected boolean isThrottleScaleValid(double previousThrottle, double actualThrottle){
-   //    if(Math.abs(actualThrottle-previousThrottle)<=10)
-   //        return true;
-   //    else
-   //        return false;
-   //}
+    public Engine() {
+        isStarted = false;
+        actualRPM = 0;
+        previousGasPedalPushPercent = 0;
+        refreshExecutorService = Executors.newScheduledThreadPool(1);
 
-    protected boolean isSpeedUp(double previousThrottle, double actualThrottle){
-        if(previousThrottle<actualThrottle){
-            return true;
-        }
-        else{
-            return false;
-        }
-    }
-
-
-
-    public double generateRPM(boolean enginestatus, double Throttle){
-
-        throttle=Throttle;
-
-        if(isStarted(enginestatus)) {
-
-            if(isThrottleValid(throttle)){
-
-                    if(isSpeedUp(previousThrottle, throttle)){
-                        previousThrottle=throttle;
-                        return actualRPM=baseRPM + maxRange * (throttle / 100);
-                        //ide kéne kitalálni, hogyan gyorsítsuk (a másik ágban pedig lassítsuk) késleltetve a fordulatszámot
-
-
-                    }
-                    else{
-                        previousThrottle=throttle;
-                        return actualRPM=baseRPM - maxRange * (throttle / 100);
-                    }
-
+        final ActionListener actionListenerStartEngine = new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                isStarted = true;
             }
-            else {
-
-               //ezt ki kéne dolgozni, hogy mi van ha invalid inputot kapunk
-                return baseRPM;
+        };
+        final ActionListener actionListenerAccelerate = new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                Accelerate();
             }
-        }
-        else{
-            return 0;
-        }
+        };
+        final ActionListener actionListenerDecelerate = new ActionListener() {
+            public void actionPerformed(ActionEvent evt) {
+                Decelerate();
+            }
+        };
 
+        refreshExecutorService.schedule(new Runnable() {
+            @Override
+            public void run() {
+                if (!isStarted /*&& DriverInput.getEngineToggleButtonState()*/) {
+                    startTimer = new Timer(REACTIONTIME, actionListenerStartEngine);
+                    startTimer.start();
+                } else if (isStarted /*&& !DriverInput.getEngineToggleButtonState()*/) {
+                    isStarted = false;
+                } else {
+                    /*actualGasPedalPushPercent = DriverInput.getGasPedalPushPercent();*/
+
+                    if (previousGasPedalPushPercent < actualGasPedalPushPercent) {
+                        throttleTimer = new Timer(REACTIONTIME, actionListenerAccelerate);
+                        throttleTimer.start();
+                    } else if (previousGasPedalPushPercent > actualGasPedalPushPercent) {
+                        throttleTimer = new Timer(REACTIONTIME, actionListenerDecelerate);
+                        throttleTimer.start();
+                    }
+                }
+            }
+        }, REFRESHTIME, MILLISECONDS);
     }
 
-    public engine(double baseRPM) {
-        this.baseRPM = baseRPM;
+    private void Accelerate() {
+
+        if (getActualRPM() + 150 > MAXRPM)
+        {
+            previousGasPedalPushPercent = actualGasPedalPushPercent;
+            actualRPM = MAXRPM;
+        }
+        else if (getActualRPM() + 150 < MAXRPM) {
+            previousGasPedalPushPercent = actualGasPedalPushPercent;
+            actualRPM = actualRPM + 150;
+        }
+        else {
+            Decelerate();
+        }
     }
 
-
+    private void Decelerate() {
+        if (getActualRPM() - 150 < BASERPM)
+        {
+            previousGasPedalPushPercent = actualGasPedalPushPercent;
+            actualRPM = BASERPM;
+        }
+        else if (getActualRPM() - 150 > BASERPM) {
+            previousGasPedalPushPercent = actualGasPedalPushPercent;
+            actualRPM = actualRPM - 150;
+        }
+    }
 }
