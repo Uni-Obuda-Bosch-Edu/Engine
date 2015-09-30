@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="58ce16a2-f061-4368-86d9-651e0628fdd7" name="Default" comment="previousthrottle update lemaradt">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/engine.java" afterPath="$PROJECT_DIR$/src/engine.java" />
+    <list default="true" id="58ce16a2-f061-4368-86d9-651e0628fdd7" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Engine unit interface specification (1).docx" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="engineunit.iws" />
@@ -29,8 +29,8 @@
       <file leaf-file-name="engine.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/engine.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.660473" vertical-offset="816" max-vertical-offset="1581">
-              <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
+            <state vertical-scroll-proportion="0.3733108" vertical-offset="0" max-vertical-offset="1581">
+              <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
               <folding>
                 <element signature="n#!!doc" expanded="true" />
                 <element signature="e#2036#2037#0" expanded="true" />
@@ -168,6 +168,11 @@
     <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="ignore_missing_gitignore" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="F:\work\Vodafone\bannerek\m2m\Engine" />
+    </key>
   </component>
   <component name="RunManager">
     <configuration default="true" type="GrailsRunConfigurationType" factoryName="Grails">
@@ -419,7 +424,7 @@
       <created>1443605757133</created>
       <updated>1443605757133</updated>
       <workItem from="1443605760678" duration="4064000" />
-      <workItem from="1443613815536" duration="4701000" />
+      <workItem from="1443613815536" duration="5068000" />
     </task>
     <task id="LOCAL-00001" summary="teszt commit">
       <created>1443614005041</created>
@@ -445,11 +450,15 @@
       <created>1443618881029</created>
       <updated>1443618881029</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="kivettem a valid-e a léptéket, mert az felesleges lesz később">
+      <created>1443619671264</created>
+      <updated>1443619671264</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8765000" />
+    <option name="totallyTimeSpent" value="9132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -504,7 +513,8 @@
     <MESSAGE value="readme file added" />
     <MESSAGE value="valid input adatok ellenőrzése, gyorsít/lassít detektálása" />
     <MESSAGE value="previousthrottle update lemaradt" />
-    <option name="LAST_COMMIT_MESSAGE" value="previousthrottle update lemaradt" />
+    <MESSAGE value="kivettem a valid-e a léptéket, mert az felesleges lesz később" />
+    <option name="LAST_COMMIT_MESSAGE" value="kivettem a valid-e a léptéket, mert az felesleges lesz később" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -549,8 +559,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/engine.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.660473" vertical-offset="816" max-vertical-offset="1581">
-          <caret line="71" column="52" selection-start-line="71" selection-start-column="52" selection-end-line="71" selection-end-column="52" />
+        <state vertical-scroll-proportion="0.3733108" vertical-offset="0" max-vertical-offset="1581">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
           <folding>
             <element signature="n#!!doc" expanded="true" />
             <element signature="e#2036#2037#0" expanded="true" />
