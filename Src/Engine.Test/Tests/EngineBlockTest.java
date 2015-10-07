@@ -3,7 +3,7 @@ import static org.junit.Assert.*;
 import org.junit.Assert;
 import org.junit.Test;
 
-public class EngineTest {
+public class EngineBlockTest {
 
     @org.junit.Before
     public void setUp() throws Exception {
