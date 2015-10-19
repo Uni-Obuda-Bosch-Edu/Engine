@@ -5,22 +5,18 @@ import java.util.TimerTask;
 
 public class Engine
 {
-    public static final int BUS_READ_PERIOD_SEC = 1;
-
+    private final int _busReadPeriodMilisec;
     private final Container _container;
     private final IEngineBlock _engineBlock;
     private final Timer _messagePump;
 
-    public Engine(Container container) {
-        _container = container;
-        _engineBlock = new EngineBlock(_container,_container);
-        _messagePump = new Timer();
-    }
+    private boolean _isConnected;
 
-    public Engine(Container container, IEngineBlock engineBlock) {
+    public Engine(Container container, IEngineBlock engineBlock, int busReadPeriodMilisec) {
         _container = container;
         _engineBlock = engineBlock;
         _messagePump = new Timer();
+        _busReadPeriodMilisec = busReadPeriodMilisec;
     }
 
     public void Connect(){
@@ -29,14 +25,24 @@ public class Engine
             public void run() {
                 Signal();
             }
-        }, BUS_READ_PERIOD_SEC *1000);
+        }, _busReadPeriodMilisec);
+        _isConnected = true;
     }
 
     public void Disconnect(){
         _messagePump.cancel();
+        _isConnected = false;
     }
 
     private void Signal(){
+        _engineBlock.Signal();
+    }
 
+    public boolean IsConnected() {
+        return _isConnected;
+    }
+
+    public int GetBusReadPeriodMilisec() {
+        return _busReadPeriodMilisec;
     }
 }
