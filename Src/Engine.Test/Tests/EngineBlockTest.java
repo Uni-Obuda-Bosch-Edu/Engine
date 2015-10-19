@@ -22,8 +22,8 @@ public class EngineBlockTest {
         ArrayList<Double> result = new ArrayList<Double>();
 
         double nextRev = start;
-        for (int i = 0; i < throttleStates.length; i++)
-            result.add(_engineBlock.CalcNextRev(nextRev, throttleStates[i]));
+        for (int i = 0; i < EngineBlock.MIN_TO_MAX_REV_TIME_MS*2; i++)
+            result.add(_engineBlock.CalcNextPositiveRev(nextRev, throttleStates[i]));
 
         return result;
     }
