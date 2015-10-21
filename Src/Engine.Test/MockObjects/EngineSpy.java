@@ -10,4 +10,9 @@ public class EngineSpy implements IEngineBlock {
     public void Signal() {
         _isSignaled = true;
     }
+
+    @Override
+    public void SetCurrentRev(double rev) {
+
+    }
 }
