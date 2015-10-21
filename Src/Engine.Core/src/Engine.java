@@ -42,7 +42,7 @@ public class Engine
         return _isConnected;
     }
 
-    public int GetBusReadPeriodMilisec() {
+    public int GetBusReadPeriodMs() {
         return _busReadPeriodMilisec;
     }
 }

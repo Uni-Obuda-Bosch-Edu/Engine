@@ -26,7 +26,7 @@
         <entry file="file://$PROJECT_DIR$/Engine.Core/src/Engine.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+              <caret line="44" column="33" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -34,17 +34,54 @@
           </provider>
         </entry>
       </file>
+      <file leaf-file-name="EngineSpy.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine.Test/MockObjects/EngineSpy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+              <folding>
+                <element signature="e#118#119#0" expanded="true" />
+                <element signature="e#152#153#0" expanded="true" />
+                <element signature="e#194#195#0" expanded="true" />
+                <element signature="e#228#229#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IEngineBlock.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine.Core/src/IEngineBlock.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="0" column="29" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="29" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="EngineBlockTest.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineBlockTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3848684">
-              <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.6313253">
+              <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#572#580#0" expanded="true" />
-                <element signature="e#908#916#0" expanded="true" />
-                <element signature="e#1098#1099#0" expanded="true" />
-                <element signature="e#1163#1164#0" expanded="true" />
+                <element signature="method#setUp#0;class#EngineBlockTest#0" expanded="false" />
+                <element signature="method#From_500_to_6025#0;class#EngineBlockTest#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EngineTest.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="method#setUp#0;class#EngineTest#0" expanded="false" />
+                <element signature="method#setDown#0;class#EngineTest#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -54,10 +91,9 @@
         <entry file="file://$PROJECT_DIR$/Engine.Core/src/EngineBlock.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+              <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#SetCurrentRev#0;class#EngineBlock#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -100,9 +136,10 @@
         <option value="$PROJECT_DIR$/Engine.Core/src/IEngineBehavior.java" />
         <option value="$PROJECT_DIR$/Engine.Core/src/Logic.java" />
         <option value="$PROJECT_DIR$/Engine.Core/src/IEngineBlock.java" />
-        <option value="$PROJECT_DIR$/Engine.Core/src/Engine.java" />
-        <option value="$PROJECT_DIR$/Engine.Test/Tests/EngineTest.java" />
         <option value="$PROJECT_DIR$/Engine.Core/src/EngineBlock.java" />
+        <option value="$PROJECT_DIR$/Engine.Core/src/Engine.java" />
+        <option value="$PROJECT_DIR$/Engine.Test/MockObjects/EngineSpy.java" />
+        <option value="$PROJECT_DIR$/Engine.Test/Tests/EngineTest.java" />
         <option value="$PROJECT_DIR$/Engine.Test/Tests/EngineBlockTest.java" />
       </list>
     </option>
@@ -147,6 +184,10 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope">
+        <subPane subId="Tests" />
+      </pane>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -185,6 +226,20 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="Engine.Test" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MockObjects" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Engine" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="Engine.Core" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -204,10 +259,6 @@
             </PATH_ELEMENT>
           </PATH>
         </subPane>
-      </pane>
-      <pane id="Scratches" />
-      <pane id="Scope">
-        <subPane subId="Tests" />
       </pane>
     </panes>
   </component>
@@ -242,15 +293,15 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.EngineBlockTest.From_500_to_1000">
-    <configuration default="false" name="EngineTest.x" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.EngineTest">
+    <configuration default="false" name="EngineTest.Engine_connection_negative_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Engine.Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="EngineTest" />
-      <option name="METHOD_NAME" value="x" />
+      <option name="METHOD_NAME" value="Engine_connection_negative_test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -264,14 +315,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineBlockTest.A1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="EngineTest.Engine_GetBusReadPeriodMs_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Engine.Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EngineBlockTest" />
-      <option name="METHOD_NAME" value="A1" />
+      <option name="MAIN_CLASS_NAME" value="EngineTest" />
+      <option name="METHOD_NAME" value="Engine_GetBusReadPeriodMs_test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -285,14 +336,14 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineBlockTest.From_0_to_100" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="EngineTest.Engine_connected_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Engine.Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EngineBlockTest" />
-      <option name="METHOD_NAME" value="From_0_to_100" />
+      <option name="MAIN_CLASS_NAME" value="EngineTest" />
+      <option name="METHOD_NAME" value="Engine_connected_test" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -306,15 +357,36 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="EngineBlockTest.From_500_to_1000" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="EngineTest.Engine_connect_disconnect_test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="Engine.Test" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="EngineBlockTest" />
-      <option name="METHOD_NAME" value="From_500_to_1000" />
+      <option name="MAIN_CLASS_NAME" value="EngineTest" />
+      <option name="METHOD_NAME" value="Engine_connect_disconnect_test" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="EngineTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="Engine.Test" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="EngineTest" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -433,18 +505,20 @@
       <listeners />
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest.x" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.A1" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.From_0_to_100" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.From_500_to_1000" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connection_negative_test" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_GetBusReadPeriodMs_test" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connected_test" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connect_disconnect_test" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.From_500_to_1000" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.From_0_to_100" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.EngineBlockTest.A1" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.x" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.EngineTest" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connect_disconnect_test" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connected_test" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_GetBusReadPeriodMs_test" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.EngineTest.Engine_connection_negative_test" />
       </list>
     </recent_temporary>
   </component>
@@ -473,7 +547,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3034591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3034591" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24963397" sideWeight="0.4927235" order="0" side_tool="false" content_ui="combo" />
@@ -520,13 +594,41 @@
     <entry file="file://$PROJECT_DIR$/Engine.Core/src/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineBlockTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#EngineBlockTest#0" expanded="false" />
+            <element signature="method#From_500_to_6025#0;class#EngineBlockTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Core/src/EngineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Core/src/Engine.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="46" column="20" selection-start-line="46" selection-start-column="20" selection-end-line="46" selection-end-column="20" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -545,6 +647,8 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#EngineTest#0" expanded="false" />
+            <element signature="method#setDown#0;class#EngineTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -555,10 +659,8 @@
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#572#580#0" expanded="true" />
-            <element signature="e#908#916#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="method#setUp#0;class#EngineBlockTest#0" expanded="false" />
+            <element signature="method#From_500_to_6025#0;class#EngineBlockTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -569,7 +671,6 @@
           <caret line="3" column="7" selection-start-line="3" selection-start-column="7" selection-end-line="3" selection-end-column="7" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#SetCurrentRev#0;class#EngineBlock#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -580,10 +681,6 @@
           <caret line="39" column="0" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -602,6 +699,8 @@
           <caret line="27" column="5" selection-start-line="27" selection-start-column="5" selection-end-line="27" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#EngineTest#0" expanded="false" />
+            <element signature="method#setDown#0;class#EngineTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -612,10 +711,8 @@
           <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#572#580#0" expanded="true" />
-            <element signature="e#908#916#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="method#setUp#0;class#EngineBlockTest#0" expanded="false" />
+            <element signature="method#From_500_to_6025#0;class#EngineBlockTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -626,7 +723,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#SetCurrentRev#0;class#EngineBlock#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -637,10 +733,6 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#1007#1008#0" expanded="true" />
-            <element signature="e#1042#1043#0" expanded="true" />
-            <element signature="e#1086#1087#0" expanded="true" />
-            <element signature="e#1130#1131#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -651,6 +743,8 @@
           <caret line="10" column="5" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#EngineTest#0" expanded="false" />
+            <element signature="method#setDown#0;class#EngineTest#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -695,25 +789,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="6" column="18" selection-start-line="6" selection-start-column="18" selection-end-line="6" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine.Core/src/IEngineBlock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="14" column="65" selection-start-line="14" selection-start-column="65" selection-end-line="14" selection-end-column="65" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -721,7 +796,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-7.814815">
           <caret line="26" column="21" selection-start-line="26" selection-start-column="21" selection-end-line="26" selection-end-column="21" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -729,17 +803,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.040963855">
           <caret line="1" column="1" selection-start-line="1" selection-start-column="1" selection-end-line="1" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Core/src/IEngineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="29" selection-start-line="0" selection-start-column="17" selection-end-line="0" selection-end-column="29" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Engine.Core/src/EngineBlock.java">
+    <entry file="file://$PROJECT_DIR$/Engine.Test/MockObjects/EngineSpy.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="42" column="27" selection-start-line="42" selection-start-column="27" selection-end-line="42" selection-end-column="27" />
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
           <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#SetCurrentRev#0;class#EngineBlock#0" expanded="false" />
+            <element signature="e#118#119#0" expanded="true" />
+            <element signature="e#152#153#0" expanded="true" />
+            <element signature="e#194#195#0" expanded="true" />
+            <element signature="e#228#229#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -747,7 +830,29 @@
     <entry file="file://$PROJECT_DIR$/Engine.Core/src/Engine.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="17" column="35" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <caret line="44" column="33" selection-start-line="44" selection-start-column="15" selection-end-line="44" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#setUp#0;class#EngineTest#0" expanded="false" />
+            <element signature="method#setDown#0;class#EngineTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Engine.Core/src/EngineBlock.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="35" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -756,14 +861,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Engine.Test/Tests/EngineBlockTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3848684">
-          <caret line="30" column="53" selection-start-line="30" selection-start-column="53" selection-end-line="30" selection-end-column="53" />
+        <state vertical-scroll-proportion="0.6313253">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#572#580#0" expanded="true" />
-            <element signature="e#908#916#0" expanded="true" />
-            <element signature="e#1098#1099#0" expanded="true" />
-            <element signature="e#1163#1164#0" expanded="true" />
+            <element signature="method#setUp#0;class#EngineBlockTest#0" expanded="false" />
+            <element signature="method#From_500_to_6025#0;class#EngineBlockTest#0" expanded="false" />
           </folding>
         </state>
       </provider>

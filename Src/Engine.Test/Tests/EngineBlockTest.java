@@ -11,37 +11,30 @@ public class EngineBlockTest {
 
     private EngineBlock _engineBlock;
     private Container _bus;
+    private ArrayList<Double> _expectedResult;
 
     @org.junit.Before
     public void setUp() throws Exception {
         _bus = Container.getInstance();
         _engineBlock = new EngineBlock(_bus, _bus);
-    }
 
-    private ArrayList<Double> DoTest(double start, double...throttleStates){
-        ArrayList<Double> result = new ArrayList<Double>();
-
-        double nextRev = start;
-        for (int i = 0; i < EngineBlock.MIN_TO_MAX_REV_TIME_MS*2; i++)
-            result.add(_engineBlock.CalcNextPositiveRev(nextRev, throttleStates[i]));
-
-        return result;
-    }
-
-    private ArrayList<Double> List(double...doubles){
-
-        ArrayList<Double> result = new ArrayList<Double>();
-
-        for (int i = 0; i < doubles.length; i++) {
-            result.add(doubles[i]);
-        }
-
-        return result;
+        _expectedResult = new ArrayList<Double>();
     }
 
     @Test
-    public void From_500_to_1000()
+    public void Rev_range_test(){
+
+    }
+
+    @Test
+    public void From_500_to_6025()
     {
-        Assert.assertEquals(List(500), DoTest(500, 1000));
+        ArrayList<Double> result = new ArrayList<Double>();
+
+        double nextRev = 500;
+        for (int i = 0; i < EngineBlock.MIN_TO_MAX_REV_TIME_MS; i++)
+            result.add(_engineBlock.CalcNextPositiveRev(nextRev, 6025));
+
+        Assert.assertEquals(_expectedResult, result);
     }
 }
