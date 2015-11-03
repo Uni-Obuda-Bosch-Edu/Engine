@@ -29,7 +29,7 @@ public class EngineTest {
 
         //Act
         _engine.Connect();
-        Thread.sleep(_engine.GetBusReadPeriodMs());
+        Thread.sleep(_engine.GetBusReadPeriodMs()+100);
 
         //Assert
         assertTrue(_engine.GetBusReadPeriodMs() == BUS_READ_PERIOD_MS);
