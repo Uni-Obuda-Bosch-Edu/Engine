@@ -5,5 +5,5 @@
 	<classpathentry kind="src" path="MockObjects"/>
 	<classpathentry kind="lib" path="C:/Work/Engine/Refs/junit-4.7.jar"/>
 	<classpathentry combineaccessrules="false" kind="src" path="/Engine.Core"/>
-	<classpathentry kind="output" path="bin"/>
+	<classpathentry kind="output" path="/out/production/Engine.Test"/>
 </classpath>
