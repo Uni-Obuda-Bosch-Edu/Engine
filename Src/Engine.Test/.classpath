@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="Tests"/>
+	<classpathentry kind="src" path="MockObjects"/>
+	<classpathentry kind="lib" path="C:/Work/Engine/Refs/junit-4.7.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/Engine.Core"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
