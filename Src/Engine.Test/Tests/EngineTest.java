@@ -54,4 +54,22 @@ public class EngineTest {
         assertFalse(_engine.IsConnected());
         assertFalse(_engEngineSpy.GetIsSignaled());
     }
+
+    @Test
+    public void Double_disconnect_req() throws InterruptedException{
+        //Arrange
+        boolean initState = _engine.IsConnected();
+
+        //Act
+        _engine.Connect();
+        _engine.Disconnect();
+        _engine.Disconnect();
+        Thread.sleep(_engine.GetBusReadPeriodMs());
+
+        //Assert
+        assertTrue(_engine.GetBusReadPeriodMs() == BUS_READ_PERIOD_MS);
+        assertFalse(initState);
+        assertFalse(_engine.IsConnected());
+        assertFalse(_engEngineSpy.GetIsSignaled());
+    }
 }
